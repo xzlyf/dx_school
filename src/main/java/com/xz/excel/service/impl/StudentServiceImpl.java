@@ -6,6 +6,8 @@ import com.xz.excel.table.TableStudent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @Author: xz
  * @Date: 2021/3/26
@@ -23,5 +25,11 @@ public class StudentServiceImpl implements StudentService {
             return -1;
         }
         return 1;
+    }
+
+    @Override
+    public List<TableStudent> findAll() {
+
+        return studentRepo.findAll();
     }
 }

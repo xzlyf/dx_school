@@ -14,4 +14,8 @@ public class ExcelController {
     public String formPage() {
         return "xgym";
     }
+    @GetMapping("/find")
+    public String showPage() {
+        return "tech";
+    }
 }
