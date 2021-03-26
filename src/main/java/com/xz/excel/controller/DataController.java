@@ -1,9 +1,9 @@
 package com.xz.excel.controller;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import com.xz.excel.bean.ApiResult;
+import com.xz.excel.bean.Student;
+import com.xz.excel.constant.StatusEnum;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Author: xz
@@ -22,7 +22,17 @@ public class DataController {
                      @RequestParam(value = "will", required = false) String will,
                      @RequestParam(value = "remark", required = false) String remark) {
 
-        System.out.println(name + "==================");
+    }
+
+    @PostMapping(value = "/saveV2", produces = "application/json;charset=UTF-8")
+    public Object saveV2(@RequestBody(required = false) Student student) {
+        if (student == null) {
+            System.out.println("未传入数据");
+            return new ApiResult(StatusEnum.STATUS_2);
+        }
+
+
+        return new ApiResult(StatusEnum.SUCCESS);
     }
 
 }

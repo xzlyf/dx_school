@@ -8,19 +8,19 @@
 </head>
 <body>
 
-<form name=”form” method="post" action="/data/save">
+<form action="#">
     姓名 <br>
-    <input type="text" name="name" id="name"><br>
+    <input type="text" name="name"><br>
     性别 <br>
-    <input type="text" name="sex" id="sex"><br>
+    <input type="text" name="sex"><br>
     年龄 <br>
-    <input type="text" name="age" id="age"><br>
+    <input type="text" name="age"><br>
     岗位/职务 <br>
-    <input type="text" name="duty" id="duty"><br>
+    <input type="text" name="duty"><br>
     身份证号 <br>
-    <input type="text" name="idcard" id="idcard"><br>
+    <input type="text" name="idcard"><br>
     联系电话 <br>
-    <input type="text" name="phone" id="phone"><br>
+    <input type="text" name="phone"><br>
     是否愿意接种 <br>
     <select id="will">
         <option value="1">是</option>
@@ -29,11 +29,8 @@
     <br>
     备注 <br>
     <input type="text" name="remark" id="remark"><br>
-
-
-    <input type="submit" name="submit" value="提交">
 </form>
-
-
+<input id="submit" type="submit" name="submit" value="提交" onclick="save()">
+<h3 id="tips"></h3>
 </body>
 </html>

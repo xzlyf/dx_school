@@ -22,6 +22,10 @@ public class ApiResult {
     public ApiResult() {
     }
 
+    public ApiResult(StatusEnum status) {
+        this.code = status.getCode();
+        this.status = status.getMsg();
+    }
 
     public ApiResult(StatusEnum status, Object data) {
         this.code = status.getCode();
