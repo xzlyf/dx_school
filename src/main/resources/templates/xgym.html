@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="static/js/min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form name=”form” method="post" action="/data/save">
+    姓名 <br>
+    <input type="text" name="name" id="name"><br>
+    性别 <br>
+    <input type="text" name="sex" id="sex"><br>
+    年龄 <br>
+    <input type="text" name="age" id="age"><br>
+    岗位/职务 <br>
+    <input type="text" name="duty" id="duty"><br>
+    身份证号 <br>
+    <input type="text" name="idcard" id="idcard"><br>
+    联系电话 <br>
+    <input type="text" name="phone" id="phone"><br>
+    是否愿意接种 <br>
+    <select id="will">
+        <option value="1">是</option>
+        <option value="2">否</option>
+    </select>
+    <br>
+    备注 <br>
+    <input type="text" name="remark" id="remark"><br>
+
+
+    <input type="submit" name="submit" value="提交">
+</form>
+
+
+</body>
+</html>
