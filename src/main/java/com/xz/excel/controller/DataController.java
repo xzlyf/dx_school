@@ -29,6 +29,11 @@ public class DataController {
     @Autowired
     StudentServiceImpl studentService;
 
+    @GetMapping("/now")
+    public Object now() {
+        return new ApiResult(StatusEnum.SUCCESS, System.currentTimeMillis());
+    }
+
     @PostMapping(value = "/save", produces = "application/json;charset=UTF-8")
     public Object save(@RequestBody(required = false) Student student) {
         if (student == null) {

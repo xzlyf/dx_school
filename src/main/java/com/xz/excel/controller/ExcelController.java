@@ -9,11 +9,16 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 @Controller
 public class ExcelController {
+    @GetMapping("/")
+    public String index() {
+        return "maintain";
+    }
 
     @GetMapping("/student")
     public String formPage() {
         return "xgym";
     }
+
     @GetMapping("/find")
     public String showPage() {
         return "tech";
