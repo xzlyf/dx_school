@@ -1,9 +1,4 @@
 spring:
-  jackson:
-    #json不返回null的属性
-    default-property-inclusion: non_null
-  profiles:
-    active: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
 #    ubuntu虚拟机

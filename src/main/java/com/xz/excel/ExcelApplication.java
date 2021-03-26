@@ -6,11 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class ExcelApplication extends SpringBootServletInitializer {
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(ExcelApplication.class);
-    }
+public class ExcelApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ExcelApplication.class, args);
